@@ -1,13 +1,13 @@
 <?php
-function factorial($n) {
-    if ($n === 0) {
+function calculateFactorial($n) {
+    if ($n == 0) {
         return 1;
     } else {
-        return $n * factorial($n - 1);
+        return $n * calculateFactorial($n - 1);
     }
 }
 
 $number = 5;
-$result = factorial($number);
-echo "The factorial of $number is $result";
+$factorial = calculateFactorial($number);
+echo "Factorial of $number is $factorial";
 ?>

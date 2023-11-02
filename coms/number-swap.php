@@ -1,16 +1,16 @@
 <?php
-// Define two variables with values
+function swapNumbers(&$a, &$b) {
+    $temp = $a;
+    $a = $b;
+    $b = $temp;
+}
+
 $a = 10;
 $b = 20;
 
-// Display the original values
-echo "Original values: a = $a, b = $b<br>";
+echo "Before Swap: a = $a, b = $b<br>";
 
-// Swap the values using a temporary variable
-$temp = $a;
-$a = $b;
-$b = $temp;
+swapNumbers($a, $b);
 
-// Display the swapped values
-echo "Swapped values: a = $a, b = $b";
+echo "After Swap: a = $a, b = $b";
 ?>

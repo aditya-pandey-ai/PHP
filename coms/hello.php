@@ -1,3 +1,10 @@
 <?php
-  echo "Hello, World!";
+
+function greet($name) {
+    return "Hello, $name!";
+}
+
+$name = "World";
+echo greet($name);
+
 ?>
