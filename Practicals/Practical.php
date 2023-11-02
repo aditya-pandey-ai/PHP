@@ -1,5 +1,7 @@
 <?php
 
+namespace Practicals;
+
 class Practical {
     // Static function to print "Hello, World!"
     public static function printHello() {
